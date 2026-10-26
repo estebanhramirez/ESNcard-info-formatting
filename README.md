@@ -31,6 +31,7 @@ mkdir "~/<prefix_path>/<project_name>/Output_data"
                 ├── Input_data/
                 └── Output_data/
 ```
+Make sure the raw ESNcard holders' information is stored inside folder `Input_data`. You can change the paths and names in the scripts, in order to make sure the names are compatible with the paths. The output, pre-processed, data will be stored inside folder `Output_data`.
 
 
 ### 1.2. Clone the GitHub repository
@@ -50,6 +51,8 @@ git clone "https://github.com/estebanhramirez/ESNcard-info-formatting.git" "~/<p
                           ├── README.md
                           └── ...
 ```
+<br>
+<br>
 
 
 ## 2. Set-up the virtual environment
@@ -72,7 +75,8 @@ or (in Windows)
 ~\<prefix_path>\<project_name>\Repo\venv\Scripts\activate.bat
 ```
 We can deactivate the virtual environment using `deactivate.bat`.
-
+<br>
+<br>
 
 
 ## 3. Install the required libraries
