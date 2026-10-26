@@ -73,9 +73,9 @@ source "~/<prefix_path>/<project_name>/Repo/venv/bin/activate"
 ```
 or (in Windows)
 ```
-~\<prefix_path>\<project_name>\Repo\venv\Scripts\activate.bat
+"~\<prefix_path>\<project_name>\Repo\venv\Scripts\activate.bat"
 ```
-We can deactivate the virtual environment using `deactivate.bat`.
+We can deactivate the virtual environment using `deactivate.bat`. Please notice that the quotes are important in the path.
 
 <br>
 <br>
