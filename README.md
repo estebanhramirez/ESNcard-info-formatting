@@ -4,7 +4,7 @@ Repository with the Python code used for pre-processing raw ESNcard information,
 ## 1. Create the project directory
 
 ### 1.1. Create the root folder
-Create a folder named `<project_name>`, at some path `<prefix_path>` <br>
+Create a folder named `<project_name>`, at some path `~/<prefix_path>` <br>
 <br>
 **Command `[Command Prompt]`:**
 ```
@@ -17,42 +17,45 @@ mkdir "~/<prefix_path>/<project_name>"
 ```
 
 ### 1.2. Create (local) data folders
-Create two folders named `input_data` and `output_data`, at path `<prefix_path>/<project_name>` <br> 
+Create two folders named `Input_data` and `Output_data`, inside the root folder, `~/<prefix_path>/<project_name>` <br> 
 <br>
 **Command `[Command Prompt]`:**
 ```
-mkdir "~/<prefix_path>/<project_name>/input_data"
-mkdir "~/<prefix_path>/<project_name>/output_data"
+mkdir "~/<prefix_path>/<project_name>/Input_data"
+mkdir "~/<prefix_path>/<project_name>/Output_data"
 ```
 **Result `[File directory]`:**
 ```
 <prefix_path>/
-        ├── input_data/
-        ├── output_data/
         └── <project_name>/
+                ├── Input_data/
+                └── Output_data/
 ```
 
 
 ### 1.2. Clone the GitHub repository
-Clone this repository inside the root folder <br>
+Clone this repository to a folder `Repo`, inside the root folder, `~/<prefix_path>/<project_name>` <br>
 <br>
 **Command `[Command Prompt]`:**
 ```
-git clone "https://github.com/estebanhramirez/Local-OLLAMA-Chatbot.git" "~/<prefix_path>/<project_name>/Repo"
+git clone "https://github.com/estebanhramirez/ESNcard-info-formatting.git" "~/<prefix_path>/<project_name>/Repo"
 ```
 **Result `[File directory]`:**
 ```
 <prefix_path>/
         └── <project_name>/
+                    ├── Input_data/
+                    ├── Output_data/
                     └── Repo/
                           ├── README.md
                           └── ...
 ```
 
+
 ## 2. Set-up the virtual environment
 
 ### 2.1. Create the virtual environment
-Create a new folder name `venv` inside the root folder, `<project_name>`, with the isolated and self-contained virtual environment <br>
+Create a new folder name `venv` inside the repository folder, `~/<prefix_path>/<project_name>/Repo`, with an isolated and self-contained virtual environment <br>
 <br>
 **Command `[Command Prompt]`:**
 ```
@@ -70,13 +73,11 @@ or (in Windows)
 ```
 We can deactivate the virtual environment using `deactivate.bat`.
 
+
+
 ## 3. Install the required libraries
 **Command `[Command Prompt]`:**
 ```
 pip install -r "~/<prefix_path>/<project_name>/Repo/requirements.txt"
-```
-(After creating the LocalTunnel: test the public online link)
-```
-curl -X POST https://olive-donuts-add.loca.lt/generate -H "Authorization: Bearer <API_KEY>" -H "Content-Type: application/json" -H "bypass-tunnel-reminder: true" -d "{\"prompt\": \"What are you?\"}"
 ```
 
